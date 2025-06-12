@@ -35,7 +35,7 @@ export const AllProducts = ({ products }: { products: IProduct[] }) => {
     <div className="relative">
       {/* Mobile Filter Toggle Button - Only shows on tablet/mobile */}
       {!isDesktop && (
-        <div className="sticky top-20 z-10 mb-4 flex justify-end lg:hidden">
+        <div className="sticky top-20 z-10 my-4 flex justify-end lg:hidden">
           <Button
             variant="outline"
             onClick={() => setIsMobileFilterOpen(true)}
@@ -60,14 +60,14 @@ export const AllProducts = ({ products }: { products: IProduct[] }) => {
           <SheetContent side="left" className="w-[300px] sm:w-[350px]">
             <SheetHeader>
               <SheetTitle className="flex justify-between items-center">
-                Filters
+                {/* Filters
                 <Button
                   variant="ghost"
                   size="icon"
                   onClick={() => setIsMobileFilterOpen(false)}
                 >
                   <X className="h-4 w-4" />
-                </Button>
+                </Button> */}
               </SheetTitle>
             </SheetHeader>
             <div className="py-4">
@@ -82,7 +82,7 @@ export const AllProducts = ({ products }: { products: IProduct[] }) => {
             isDesktop ? "lg:col-span-9 xl:col-span-10" : "col-span-12"
           }`}
         >
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
             {products?.map((product: IProduct, idx: number) => (
               <ProductCard key={idx} product={product} />
             ))}
