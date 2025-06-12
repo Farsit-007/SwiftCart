@@ -145,15 +145,15 @@ const UserDashboard = () => {
           <Card key={i} className="bg-white dark:bg-gray-800">
             <CardContent className="p-4">
               <div className="flex items-center gap-4">
-                <div className={`${item.bg} p-3 rounded-full`}>{item.icon}</div>
+                {/* <div className={`${item.bg} p-3 rounded-full`}>{item.icon}</div> */}
                 <div className={`${item.bg} p-3 rounded-full`}>{item.icon}</div>
                 <div>
                   <p className="text-gray-500 dark:text-gray-400">
                     {item.title}
                   </p>
-                  <p className="text-gray-500 dark:text-gray-400">
+                  {/* <p className="text-gray-500 dark:text-gray-400">
                     {item.title}
-                  </p>
+                  </p> */}
                   <p className="text-2xl font-bold">{item.value}</p>
                 </div>
               </div>
